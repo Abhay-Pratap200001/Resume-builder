@@ -41,7 +41,6 @@ export const registerUser = asyncHandler(async (req, res) => {
 
     // Generate JWT and set cookie
     generateToken(res, newUser._id);
-
     res.status(201).json({
       _id: newUser._id,
       name: newUser.name,
