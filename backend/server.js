@@ -3,6 +3,8 @@ import express from 'express';
 import cors from 'cors';
 import dotenv from "dotenv"; 
 import { connectDB } from './config/db.js';
+import userRouter from './routes/userRoutes.js';
+import cookieParser from 'cookie-parser';
 
 // Load environment variables from .env file
 dotenv.config();
@@ -12,6 +14,8 @@ const port = process.env.PORT || 4000;
 
 // Initialize express app
 const app = express();
+app.use(cookieParser())
+
 
 // Enable CORS for cross-origin requests
 app.use(cors());
@@ -21,6 +25,9 @@ connectDB();
 
 // Middleware to parse incoming JSON requests
 app.use(express.json());
+
+
+app.use('/api/auth', userRouter)
 
 // Base route (for testing API status)
 app.get('/', (req, res) => {
