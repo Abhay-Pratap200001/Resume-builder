@@ -51,7 +51,7 @@ const LandingPage = () => {
               <LayoutTemplate className="w-5 h-5 text-white" />
             </div>
             <span className="text-xl sm:text-2xl font-black bg-gradient-to-r from-violet-600 to-fuchsia-600 bg-clip-text text-transparent">
-              ResumeXpert
+              AscendResume
             </span>
           </div>
 
@@ -207,7 +207,7 @@ const LandingPage = () => {
               <h2 className="md:text-4xl font-extrabold text-gray-800">
                 Why Choose{" "}
                 <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
-                  ResumeXpert
+                  AscendResume
                 </span>
               </h2>
 
