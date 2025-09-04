@@ -75,9 +75,10 @@ export const loginUser = asyncHandler(async (req, res) => {
 
     if (isPasswordValid) {
       // Generate JWT token in cookie
-      generateToken(res, existingUser._id);
+      const token = generateToken(res, existingUser._id);
 
       return res.status(200).json({
+        token,
         _id: existingUser._id,
         name: existingUser.name,
         email: existingUser.email,
