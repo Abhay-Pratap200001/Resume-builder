@@ -4,8 +4,7 @@ import { UserContext } from "../context/UserContext"; // To update user state gl
 import axiosInstance from "../utils/axiosInstance"; // Pre-configured axios instance
 import { API_PATHS } from "../utils/apiPath"; // Centralized API routes
 import { validateEmail } from "../utils/helper"; // Simple email validation
-import Input from "./Input"; // Custom input component
-
+import { Input } from "./Input";
 // Login Component
 // Props:
 // - setCurrentPage: function to switch between login and signup

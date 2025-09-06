@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom"; // To navigate between pages
 import { validateEmail } from "../utils/helper"; // Email validation function
 import axiosInstance from "../utils/axiosInstance"; // Pre-configured Axios for API calls
 import { API_PATHS } from "../utils/apiPath"; // API routes (register, login, etc.)
-import Input from "./Input"; // Reusable Input component
+import {Input} from "./Input"; // Reusable Input component
 
 const Signup = ({ setCurrentPage }) => {
   // Local state for form fields
